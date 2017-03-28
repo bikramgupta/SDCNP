@@ -133,6 +133,12 @@ Top 5 predictation for each image:
  [ 4 18  1 20  2]
  [17 14  8  3 13]]
  
+ "Comparison of accuracy of new traffic signs with the test results: 
+While the test data had an accuracy of 92.7% classification, the Internet downloaded images (total 6) had barely 50% classification accuracy. While it may mean that model is overfitting, but it is also important to note multiple things:
+ - Overfitting, which is often the cause. It is most likely the cause that the model is trying to overfit itself to those 43 clasess of images and thousands of samples.
+ - New class of traffic signs are slightly different images and cannot be classified into any category. This might not be true for the images used by me.
+ - A better option for me would be to download 50 or 100 images and run the model. That will give me a better idea if the model is working"
+
 
 
 ####3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction and identify where in your code softmax probabilities were outputted. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
